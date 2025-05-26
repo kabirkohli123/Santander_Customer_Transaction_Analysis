@@ -16,14 +16,27 @@ The solution leverages the **LightGBM** algorithm, which is well-suited for stru
 
 ## 📁 Dataset
 
-The dataset consists of anonymized features and includes:
+The dataset consists of:
 
-* `train.csv`: Labeled data for training (features + target)
-* `test.csv`: Unlabeled data for prediction (features only)
+* `train.csv` — Training data with features and target labels
+  🔗 [Download train.csv](https://drive.google.com/file/d/1WYAjM37tmqSTQ3RivckJUMoB9IZ3qsN9/view)
 
-All features are anonymized and named `var_0`, `var_1`, ..., `var_199`.
+* `test.csv` — Test data without labels
+  🔗 [Download test.csv](https://drive.google.com/file/d/1XQ5Ys7f_eVlJGL24Mb9umk9qAAwI0GPF/view)
+
+To use them in Google Colab:
+
+```python
+!gdown --id 1WYAjM37tmqSTQ3RivckJUMoB9IZ3qsN9
+!gdown --id 1XQ5Ys7f_eVlJGL24Mb9umk9qAAwI0GPF
+
+import pandas as pd
+train_df = pd.read_csv("train.csv")
+test_df = pd.read_csv("test.csv")
+```
 
 ---
+
 
 ## 🧰 Tools & Libraries
 
